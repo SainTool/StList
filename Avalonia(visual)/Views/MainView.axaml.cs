@@ -11,6 +11,11 @@ namespace StList.Views
         {
             InitializeComponent();
         }
+        public void ShowAboutWindow(object sender, RoutedEventArgs e)
+        {
+            var dialogWindow = new AboutView();
+            dialogWindow.ShowDialog((Window)this.Parent);
+        }
 
 
         private void InitializeComponent()
